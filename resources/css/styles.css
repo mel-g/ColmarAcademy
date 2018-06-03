@@ -588,6 +588,8 @@ li:hover {
   flex-shrink: 2;
   height: 70%;
 }
+  
+
 
 }
 
@@ -706,18 +708,8 @@ li:hover {
 .sub {
   transition: all 0.3s ease-out 0.1s;
 }
-
-
-}
-
-@media only screen and (min-width: 1024px) {
-	.subject p {
-		font-size: 15px;
-    font-weight: light;
-	}
   
-  /* thesis section */
-  video {
+    video {
     max-width: 60% !important;
   }
   
@@ -730,4 +722,27 @@ li:hover {
     width: 100% !important;
     margin-bottom: 20px;
   }
+
+
+}
+
+@media only screen and (min-width: 500px) {
+
+/* thesis section */
+
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+	.subject p {
+		font-size: 15px;
+    font-weight: light;
+	}
+  
+.main-detail {
+    width: 60%;
+  }
+  
+  
 }
