@@ -1,0 +1,1 @@
+This is the Git repository for my **Colmar Academy** project, a required part of the BWFS Codecademy course.
