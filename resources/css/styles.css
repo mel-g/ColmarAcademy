@@ -728,5 +728,6 @@ li:hover {
   
   .next-video {
     width: 100% !important;
+    margin-bottom: 20px;
   }
 }
