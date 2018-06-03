@@ -219,6 +219,10 @@ article-header p {
   text-align: center;
 }
 
+.playlist {
+  display:none;
+}
+
 /* Footer section */
 footer {
   height: 60px;
@@ -226,6 +230,7 @@ footer {
 }
 
 footer p {
+  margin: 10px;
   text-align: center;
   padding: 25px 0;
 }
@@ -515,21 +520,44 @@ li:hover {
   }
 
 /* thesis section */
+  
+  .playlist {
+    display: block;
+  }
+  
 .thesis {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
   max-width: 1024px;
+  max-height: 600px;
 }
+  
+  .thesis h1 {
+    display: block;
+    flex-basis: 100%;
+    text-align: left;
+  }
+  
+  .playlist {
+    width: 100vw;
+    max-width: 1024px;
+    display: flex;
+    height: 20%;
+  }
 
 .thesis .next-video {
-  width:50%;
-  background-color: grey;
+  width:30%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 20%;
+  background-color: #d8d8d8;
   padding: 15px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  
 }
 
 .next-video h4 {
@@ -545,10 +573,20 @@ li:hover {
   width: 60%;
   margin-left: 10px;
 }
+  
+  .next-video:hover {
+    background-color: white;
+  }
+  
+  .next-video {
+    transition: background-color 0.5s ease-out 0.01s;
+  }
 
 .thesis video {
-  width: 100vw;
-  height: auto;
+  /* width: 100vw; */
+  flex-basis: 60%;
+  flex-shrink: 2;
+  height: 70%;
 }
 
 }
@@ -674,6 +712,21 @@ li:hover {
 
 @media only screen and (min-width: 1024px) {
 	.subject p {
-		font-size: 18px;
+		font-size: 15px;
+    font-weight: light;
 	}
+  
+  /* thesis section */
+  video {
+    max-width: 60% !important;
+  }
+  
+  .playlist {
+    width: 40%;
+    flex-direction: column;
+  }
+  
+  .next-video {
+    width: 100% !important;
+  }
 }
